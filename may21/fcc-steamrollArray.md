@@ -5,8 +5,10 @@ Extract all items from a multi layered array and return a single layered array w
 <h1 style="color: rgb(100, 100, 100); font-weight: 500;">Solution</h1>
 
 This challenge includes recursion and once conquered is fairly simple but there is an interesting nuance worth noting. First up here is the solution:
+<br>
 
 <img src="https://user-images.githubusercontent.com/73107656/116835859-32d5b600-abbc-11eb-852c-9825a84d85a6.png" alt="ProDev" width="100%"  style="border-radius: 10px;" >
+<br><br>
 
 This problem tripped me up for a while and forced me to think outside the box to overcome my issue. Initially I defined `finalArr` as an empty array inside the `steamrollArray` at the top...habit I guess. 
 
