@@ -100,7 +100,7 @@ Once the `finalArr` **forEach** has played out we then reconcile the `changeDue`
 
 We then check to see if there is any change still owed to the customer and if so enter the next nested if statement, which resets `tempArr` back to an empty array and invokes `converter`. The process runs again but with new current value of `changeDue` and the updated `cashTill` and `finalArr`.
 
-(Below) If there is still `changeDue` to the customer, and `array[0]` (coin/note type) dos not already exist in `finalArr` we jump into the if statement below.
+(Below) If there is still `changeDue` to the customer, and `array[0]` (coin/note type) does not already exist in `finalArr` we jump into the if statement below.
 
 First we add the coin/note type to `names`, then we push the coin/note, debiting `finalArr` (cash paid to the customer).
 
@@ -125,7 +125,7 @@ The till starts with 2\* $1 bills and $1 of quarters.
 
 Converter is invoked and adds a new note type ($1) to `finalArr`, `cashTill` is credited and `changeDue` is adjusted to show $1.50 to pay.
 
-`converter` is invoked, $1 bill is identified and already exists so `finalArr` is updated to the new value of $2, `cashTill` is updated with showing that there is no more $1 bills available in the float.
+`converter` is invoked, $1 bill is identified and already exists so `finalArr` is updated to the new value of $2, `cashTill` is updated, showing that there is no more $1 bills available in the float.
 
 `changeDue` is updated to show there is still $0.50 to pay, `converter` is invoked and the quarter coin is added to `finalArr` as a new coin type, credited from `cashTill` and `changeDue` is updated to show $0.25 still owed to the customer. The same process takes place once more except $0.25 is added to the value of the already existing quarter coin, `changeDue` equals 0 and `finalArr` is returned.
 
